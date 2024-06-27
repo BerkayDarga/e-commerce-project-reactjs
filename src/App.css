@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.commonWidth {
+  width: 1440px;
+}
+
+.blackButton {
+  width: 183px;
+  height: 48px;
+  background-color: black;
+  color: white;
+}
+
+.transparentButton {
+  width: 184px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #ffff;
+  border-radius: 6px;
+}
+
+.transparentButton2 {
+  width: 184px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.commonColor {
+  color: #909090;
+}
+
+.commonColorWhite {
+  color: white;
+}
+
+.HeaderTop {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 16px 160px;
+}
+
+.HeaderTop input {
+  width: 372px;
+  height: 56px;
+  padding-left: 20px;
+  background-color: #f5f5f5f5;
+  border: none;
+  border-radius: 8px;
+}
+
+.navigation {
+  display: flex;
+  gap: 52px;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
+
+.Banner {
+  height: 632px;
+  display: flex;
+  background: linear-gradient(to left, black, rgb(49, 49, 49));
+  justify-content: space-between;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.Banner h3 {
+  font-size: 96px;
+}
+
+.content {
+  margin-top: 188px;
+}
+
+.content :last-child {
+  margin-top: 24px;
+}
+
+.smalLbanners {
+  height: 600px;
+  display: flex;
+  position: relative;
+}
+
+.widesquare {
+  width: 720px;
+  height: 328px;
+  display: flex;
+}
+
+.squares {
+  width: 720px;
+  height: 272px;
+  display: flex;
+}
+
+.titleText {
+  margin-top: 112px;
+}
+
+.leftsquare {
+  width: 360px;
+  height: 272px;
+  background-color: #EDEDED;
+  display: flex;
+}
+
+.textleftsquare {
+  margin-top: 64px;
+  margin-left: 48px;
+}
+
+.rightsquare {
+  width: 360px;
+  height: 272px;
+  background-color: #353535;
+  display: flex;
+}
+
+.textrightsquare {
+  margin-top: 68px;
+}
+
+.bigbanner {
+  width: 720px;
+  height: 600px;
+  background-color: #EDEDED;
+  display: flex;
+}
+
+.textbigbanner {
+  width: 360px;
+  height: 192px;
+  margin-top: 204px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 56px;
+}
+
+.category {
+  height: 352px;
+  padding: 80px 160px;
+  background-color: #FAFAFA;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.directions {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoryprops {
+  width: 160px;
+  height: 128px;
+  border-radius: 15px;
+  background-color: #EDEDED;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.categories {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products {
+  height: 1056px;
+  padding: 56px 160px;
+}
+
+.tags {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+.productsgrid {
+  width: 1120px;
+  height: 880px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.productcard {
+  width: 268px;
+  height: 432px;
+  background-color: #F6F6F6;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.topsection {
+  width: 236px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.textIcon {
+  text-align: center;
+  width: 236px;
+  height: 160px;
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.price {
+  width: 236px;
+}
+
+.bannercontainer {
+  display: flex;
+}
+
+.banners {
+  width: 360px;
+  height: 640px;
+  padding-bottom: 56px;
+  position: relative;
+}
+
+.banners:nth-child(2) {
+  background-color: #F9F9F9;
+}
+
+.banners:nth-child(3) {
+  background-color: #EAEAEA;
+}
+
+.banners:nth-child(4) {
+  background-color: #2C2C2C;
+  color: #ffff;
+}
+
+.banners:nth-child(4) button {
+  border: 1px solid #ffff;
+  color: #ffff;
+}
+
+.bannerdescription {
+  margin-left: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 56px;
+}
+
+.bannertext {
+  width: 296px;
+  height: 208px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.discountproducts {
+  height: 656px;
+  position: relative;
+  padding: 80px 160px;
+}
+
+.discountproductcard {
+  width: 268px;
+  height: 432px;
+  background-color: #F6F6F6;
+  text-align: center;
+  padding-top: 24px;
+  position: relative;
+}
+
+.discountrow {
+  width: 1120px;
+  height: 432px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.topsection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.descriptionsection {
+  position: absolute;
+  bottom: 24px;
+}
+
+.banner2 button {
+  color: white;
+}
+
+.banner2section {
+  height: 448px;
+  background: linear-gradient(to left, black, rgb(82, 78, 78));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner2description {
+  width: 491px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.banner2 img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 223px;
+}
+
+.banner2 img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.banner2 img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.banner2 img:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  z-index: 2;
+}
+
+.banner2 img:nth-child(5) {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  z-index: 1;
+}
+
+.footer {
+  height: 540px;
+  background-color: black;
+  color: #909090;
+  position: relative;
+  padding: 104px 160px;
+}
+
+.info {
+  width: 1120px;
+  height: 256px;
+  display: flex;
+}
+
+.logoText {
+  margin-right: 113px;
+}
+
+.section1 {
+  margin-right: 32px;
+  line-height: 2;
+}
+
+.section2{
+  line-height: 2;
+}
+
+.socialIcons {
+  width: 173px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
