@@ -106,15 +106,15 @@ const Home2 = () => {
             <div className="discountproducts commonWidth">
                 <h3>Discounts up to -50%</h3>
                 <div className="discountrow">
-                    <DiscountProducts like={like} discountphoto={ıphonepro1} discountdescription="Apple iPhone 14 Pro 512GB Gold (MQ233)" money="$1437" />
-                    <DiscountProducts like={like} discountphoto={overheadphone} discountdescription="AirPods Max Silver" money="$549" />
-                    <DiscountProducts like={like} discountphoto={smartwatches2} discountdescription="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case" money="$399" />
-                    <DiscountProducts like={like} discountphoto={ıphonepro2} discountdescription="Apple iPhone 14 Pro 1TB Gold (MQ2V3)" money="$1499" />
+                    <DiscountProducts like={like} discountphoto={ıphonepro1} discountdescription="Apple iPhone 14 Pro 512GB Gold (MQ233)" money="$1437" clickButton={shopbuttonclick}/>
+                    <DiscountProducts like={like} discountphoto={overheadphone} discountdescription="AirPods Max Silver" money="$549" clickButton={shopbuttonclick}/>
+                    <DiscountProducts like={like} discountphoto={smartwatches2} discountdescription="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case" money="$399" clickButton={shopbuttonclick}/>
+                    <DiscountProducts like={like} discountphoto={ıphonepro2} discountdescription="Apple iPhone 14 Pro 1TB Gold (MQ2V3)" money="$1499" clickButton={shopbuttonclick}/>
                 </div>
             </div>
 
             <div className="banner2section commonWidth">
-                <Banner2 banner2photo={image6} banner2photo2={image7} banner2photo3={image8} banner2photo4={image18} banner2photo5={tabletApple} />
+                <Banner2 banner2photo={image6} banner2photo2={image7} banner2photo3={image8} banner2photo4={image18} banner2photo5={tabletApple} butonClick={shopbuttonclick}/>
             </div>
 
         </div>

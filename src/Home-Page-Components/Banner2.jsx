@@ -4,6 +4,8 @@ const Banner2 = (Banner2Props) => {
     const banner2photo3 = Banner2Props.banner2photo3;
     const banner2photo4 = Banner2Props.banner2photo4;
     const banner2photo5 = Banner2Props.banner2photo5;
+    const butonClick = Banner2Props.butonClick
+
     return (
         <div className="banner2">
             <img src={banner2photo} alt="" />

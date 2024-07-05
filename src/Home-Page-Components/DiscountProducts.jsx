@@ -3,6 +3,7 @@ const DiscountProducts = (DiscountProductsProps) => {
     const discountphoto = DiscountProductsProps.discountphoto;
     const discountdescription = DiscountProductsProps.discountdescription;
     const money = DiscountProductsProps.money;
+    const clickButton = DiscountProductsProps.clickButton;
     return (
         <div className="discountproductcard">
             <div className="topsection">
@@ -12,7 +13,7 @@ const DiscountProducts = (DiscountProductsProps) => {
             <div className="descriptionsection">
                 <p>{discountdescription}</p>
                 <p>{money}</p>
-                <button className="blackButton">Buy Now</button>
+                <button onClick={clickButton} className="blackButton">Buy Now</button>
             </div>
         </div>
     );

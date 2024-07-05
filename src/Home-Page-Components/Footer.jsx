@@ -1,9 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 const Footer = (FooterProps) => {
     const logoFacebook = FooterProps.logoFacebook;
     const logoTwitter = FooterProps.logoTwitter;
     const logoTiktok = FooterProps.logoTiktok;
     const logoCyber = FooterProps.logoCyber;
     const logoInstagram = FooterProps.logoInstagram;
+
+    const navigate = useNavigate();
+    const faceClick = () => {
+        navigate('/https://www.facebook.com/?locale=tr_TR')
+    }
+
     return (
         <div className="footer commonWidth">
             <div className="info">
@@ -31,7 +39,7 @@ const Footer = (FooterProps) => {
                 </div>
             </div>
             <div className="socialIcons">
-                <img src={logoFacebook} alt="" />
+                <img onClick={faceClick} src={logoFacebook} alt="" />
                 <img src={logoInstagram} alt="" />
                 <img src={logoTiktok} alt="" />
                 <img src={logoTwitter} alt="" />

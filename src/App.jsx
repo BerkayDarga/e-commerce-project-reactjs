@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 
 import HeaderTop from './Home-Page-Components/HeaderTop'
 import HeadLabel from '../src/assets/Home-Page-Assests/HeaderTopImages/logoCyber.png'
@@ -23,7 +23,6 @@ import Home2 from '../src/Home-Page-Components/Home2.jsx'
 
 function App() {
 
-
   return (
     <>
       <Router>
@@ -34,6 +33,7 @@ function App() {
           <Route path='/' element={<Home2 />} />
           <Route path='/ProductsPage' element={<ProductsPage />} />
           <Route path='/ProductDetail' element={<ProductDetail />} />
+          {/* <Route path='/https://www.facebook.com/?locale=tr_TR' element={<facebookPage/>} /> */}
 
         </Routes>
 
@@ -49,6 +49,7 @@ function App() {
 
     </>
   )
+  
 }
 
 export default App
