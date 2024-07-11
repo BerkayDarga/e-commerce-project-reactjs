@@ -46,10 +46,22 @@ import image7 from '../assets/Home-Page-Assests/Banner2Images/image7.png'
 import image8 from '../assets/Home-Page-Assests/Banner2Images/image8.png'
 import image18 from '../assets/Home-Page-Assests/Banner2Images/image18.png'
 import tabletApple from '../assets/Home-Page-Assests/Banner2Images/tabletApple.png'
-
+import { useEffect, useState } from 'react'
 
 
 const Home2 = () => {
+
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/Categories")
+            .then(response => response.json())
+            .then(data => setCategories(data))
+            .catch(error => console.log(error))
+    }, []);
+
+
+
     const navigate = useNavigate();
     const shopbuttonclick = () => {
         navigate('/ProductsPage');
@@ -70,12 +82,16 @@ const Home2 = () => {
                     </div>
                 </div>
                 <div className="categories">
-                    <Category ikon={phones} description="Phones" />
+                    {categories.map(category => (
+                        <Category key={category.Id} ikon={category.ImageUrl} description={category.Name} />
+
+                    ))}
+                    {/* <Category ikon={phones} description="Phones" />
                     <Category ikon={smartwatches} description="Smart Watches" />
                     <Category ikon={camera} description="Cameras" />
                     <Category ikon={headphomes} description="Headphones" />
                     <Category ikon={computers} description="Computers" />
-                    <Category ikon={gaming} description="Gaming" />
+                    <Category ikon={gaming} description="Gaming" /> */}
                 </div>
             </div>
 
@@ -106,15 +122,15 @@ const Home2 = () => {
             <div className="discountproducts commonWidth">
                 <h3>Discounts up to -50%</h3>
                 <div className="discountrow">
-                    <DiscountProducts like={like} discountphoto={ıphonepro1} discountdescription="Apple iPhone 14 Pro 512GB Gold (MQ233)" money="$1437" clickButton={shopbuttonclick}/>
-                    <DiscountProducts like={like} discountphoto={overheadphone} discountdescription="AirPods Max Silver" money="$549" clickButton={shopbuttonclick}/>
-                    <DiscountProducts like={like} discountphoto={smartwatches2} discountdescription="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case" money="$399" clickButton={shopbuttonclick}/>
-                    <DiscountProducts like={like} discountphoto={ıphonepro2} discountdescription="Apple iPhone 14 Pro 1TB Gold (MQ2V3)" money="$1499" clickButton={shopbuttonclick}/>
+                    <DiscountProducts like={like} discountphoto={ıphonepro1} discountdescription="Apple iPhone 14 Pro 512GB Gold (MQ233)" money="$1437" clickButton={shopbuttonclick} />
+                    <DiscountProducts like={like} discountphoto={overheadphone} discountdescription="AirPods Max Silver" money="$549" clickButton={shopbuttonclick} />
+                    <DiscountProducts like={like} discountphoto={smartwatches2} discountdescription="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case" money="$399" clickButton={shopbuttonclick} />
+                    <DiscountProducts like={like} discountphoto={ıphonepro2} discountdescription="Apple iPhone 14 Pro 1TB Gold (MQ2V3)" money="$1499" clickButton={shopbuttonclick} />
                 </div>
             </div>
 
             <div className="banner2section commonWidth">
-                <Banner2 banner2photo={image6} banner2photo2={image7} banner2photo3={image8} banner2photo4={image18} banner2photo5={tabletApple} butonClick={shopbuttonclick}/>
+                <Banner2 banner2photo={image6} banner2photo2={image7} banner2photo3={image8} banner2photo4={image18} banner2photo5={tabletApple} butonClick={shopbuttonclick} />
             </div>
 
         </div>

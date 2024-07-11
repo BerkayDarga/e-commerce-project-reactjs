@@ -1,0 +1,68 @@
+{
+    "Categories": [
+        {
+            "Id": "1",
+            "Name": "Phones",
+            "ImageUrl": "image/image7.png"
+        },
+        {
+            "Id": "2",
+            "Name": "Phones",
+            "ImageUrl": "https://www.imghippo.com/i/OoCpQ1720205530.png"
+        },
+        {
+            "Id": "3",
+            "Name": "Phones",
+            "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kapadokya-G%C3%96RSELLER-2.jpg"
+        },
+        {
+            "Id": "4",
+            "Name": "Phones",
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+        },
+        {
+            "Id": "5",
+            "Name": "Phones",
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+        },
+        {
+            "Id": "6",
+            "Name": "Phones",
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+        },
+        {
+            "Id": "7",
+            "Name": "Phones",
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+        },
+        {
+            "Id": "8",
+            "Name": "Phones",
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+        }
+    ],
+    "Product": [
+        {
+            "Id": "1",
+            "Name": "a title",
+            "Category": {
+                "Id": "1",
+                "Name": "Phones",
+                "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+            },
+            "Price": 100,
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/4f2d6a99-ca10-465c-bdcb-7073e3160b95"
+        },
+        {
+            "Id": "2",
+            "Name": "a title",
+            "Category": {
+                "Id": "1",
+                "Name": "Phones",
+                "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/7c3894a3-b925-44ca-bf6a-261f213996a5"
+            },
+            "Price": 100,
+            "ImageUrl": "https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/4f2d6a99-ca10-465c-bdcb-7073e3160b95"
+        }
+    ]
+}

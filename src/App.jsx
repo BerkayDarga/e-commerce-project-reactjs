@@ -18,7 +18,6 @@ import ProductsPage from '../src/Products-Page/ProductsPage.jsx'
 
 import ProductDetail from '../src/Product-Detail-Page/ProductDetail.jsx'
 
-
 import Home2 from '../src/Home-Page-Components/Home2.jsx'
 
 function App() {
@@ -36,8 +35,6 @@ function App() {
           {/* <Route path='/https://www.facebook.com/?locale=tr_TR' element={<facebookPage/>} /> */}
 
         </Routes>
-
-
 
         <Footer logoCyber={cyberLogo} logoTwitter={twitterLogo} logoFacebook={facebookLogo} logoTiktok={tiktokLogo} logoInstagram={ınstagramLogo} />
       </Router>
