@@ -183,7 +183,7 @@
 }
 
 .products {
-  height: 1056px;
+  height: 100%;
   padding: 56px 160px;
 }
 
@@ -195,10 +195,19 @@
 
 .productsgrid {
   width: 1120px;
-  height: 880px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.tagsButton:focus {
+  outline: none;
+}
+
+.tagsButton {
+  background-color: transparent;
+  border: none;
 }
 
 .productcard {
@@ -208,6 +217,7 @@
   padding: 24px 16px;
   text-align: center;
 }
+
 
 .topsection {
   width: 236px;
@@ -233,6 +243,8 @@
 
 .bannercontainer {
   display: flex;
+  position: relative;
+  height: 640px;
 }
 
 .banners {
@@ -280,6 +292,13 @@
   height: 656px;
   position: relative;
   padding: 80px 160px;
+  
+}
+
+.discountproducts h3 {
+  width: 300px;
+  height: 30px;
+  position: relative;
 }
 
 .discountproductcard {
@@ -296,7 +315,7 @@
   height: 432px;
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 
 .topsection {

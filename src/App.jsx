@@ -14,7 +14,7 @@ import ınstagramLogo from '../src/assets/Home-Page-Assests/FooterImages/Instagr
 import tiktokLogo from '../src/assets/Home-Page-Assests/FooterImages/Tiktok.png'
 import twitterLogo from '../src/assets/Home-Page-Assests/FooterImages/Twitter.png'
 
-import ProductsPage from '../src/Products-Page/ProductsPage.jsx'
+import ProductsPage from './Home-Page-Components/ProductsPage.jsx'
 
 import ProductDetail from '../src/Product-Detail-Page/ProductDetail.jsx'
 
@@ -30,7 +30,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Home2 />} />
-          <Route path='/ProductsPage' element={<ProductsPage />} />
+          <Route path='/ProductsPage/:id' element={<ProductsPage />} />
           <Route path='/ProductDetail' element={<ProductDetail />} />
           {/* <Route path='/https://www.facebook.com/?locale=tr_TR' element={<facebookPage/>} /> */}
 
