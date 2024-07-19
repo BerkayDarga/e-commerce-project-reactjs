@@ -50,13 +50,19 @@
                 "Name": "Camera",
                 "ImageUrl": "/category/Cameras.png"
             },
-            "Price": 1437,
+            "Price": "$1437",
             "ImageUrl": "/ProductsImages/Camera.png",
             "Tag": {
                 "Id": "1",
                 "Name": "New Arrival"
             },
-            "discount": false
+            "discount": false,
+            "banner": {
+                "Id": "1",
+                "Name": "Popular Products",
+                "ImageUrl": "BannersImages/bannersImage1.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+            }
         },
         {
             "Id": "2",
@@ -66,18 +72,16 @@
                 "Name": "Head Phone",
                 "ImageUrl": "/category/Headphones.png"
             },
-            "Price": 100,
+            "Price": "$100",
             "ImageUrl": "/ProductsImages/Airpods.png",
             "Tag": {
                 "Id": "1",
                 "Name": "New Arrival"
             },
-            "banner": {
-                "Id": "1",
-                "Name": "Popular Products",
-                "ImageUrl": "BannersImages/bannersImage1.png"
-            },
-            "discount": true
+            "discount": true,
+            "banner":{
+                "Id":"null"
+            }
         },
         {
             "Id": "3",
@@ -87,13 +91,19 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$1437",
             "ImageUrl": "/ProductsImages/Apple Iphone 14 Pro Gold.png",
             "Tag": {
                 "Id": "1",
                 "Name": "New Arrival"
             },
-            "discount": true
+            "discount": true,
+            "banner": {
+                "Id": "1",
+                "Name": "Popular Products",
+                "ImageUrl": "BannersImages/bannersImage1.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+            }
         },
         {
             "Id": "4",
@@ -103,7 +113,7 @@
                 "Name": "Tablet",
                 "ImageUrl": "/category/Tablets.png"
             },
-            "Price": 1437,
+            "Price": "$2250",
             "ImageUrl": "/ProductsImages/Apple Ipad.png",
             "Tag": {
                 "Id": "1",
@@ -112,7 +122,8 @@
             "banner": {
                 "Id": "2",
                 "Name": "Ipad Pro",
-                "ImageUrl": "BannersImages/bannersImage2.png"
+                "ImageUrl": "BannersImages/bannersImage2.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
             },
             "discount": true
         },
@@ -124,18 +135,16 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$1700",
             "ImageUrl": "/ProductsImages/Apple Iphone 13 Mini.png",
             "Tag": {
                 "Id": "2",
                 "Name": "Bestseller"
             },
-            "banner": {
-                "Id": "1",
-                "Name": "Popular Products",
-                "ImageUrl": "BannersImages/bannersImage1.png"
-            },
-            "discount": false
+            "discount": false,
+            "banner":{
+                "Id":"null"
+            }
         },
         {
             "Id": "6",
@@ -145,7 +154,7 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$1280",
             "ImageUrl": "/ProductsImages/Apple Iphone 14 Pro Black.png",
             "Tag": {
                 "Id": "2",
@@ -154,7 +163,8 @@
             "banner": {
                 "Id": "1",
                 "Name": "Popular Products",
-                "ImageUrl": "BannersImages/bannersImage1.png"
+                "ImageUrl": "BannersImages/bannersImage1.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
             },
             "discount": false
         },
@@ -166,7 +176,7 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$2756",
             "ImageUrl": "/ProductsImages/Apple Iphone 14 Pro Purple.png",
             "Tag": {
                 "Id": "2",
@@ -175,7 +185,8 @@
             "banner": {
                 "Id": "4",
                 "Name": "Apple iPhone 14 Pro Purple",
-                "ImageUrl": "BannersImages/bannersImage4.png"
+                "ImageUrl": "BannersImages/bannersImage4.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
             },
             "discount": false
         },
@@ -187,13 +198,16 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$1857",
             "ImageUrl": "/ProductsImages/Apple Iphone 14 Pro Silver.png",
             "Tag": {
                 "Id": "2",
                 "Name": "Bestseller"
             },
-            "discount": false
+            "discount": false,
+            "banner":{
+                "Id":"null"
+            }
         },
         {
             "Id": "9",
@@ -203,34 +217,38 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "$1375",
             "ImageUrl": "/ProductsImages/Apple Iphone 14 Pro White.png",
             "Tag": {
                 "Id": "2",
                 "Name": "Bestseller"
             },
-            "discount": false
+            "discount": false,
+            "banner":{
+                "Id":"null"
+            }
         },
         {
             "Id": "10",
             "Name": "Samsung Galaxy Watch",
             "Category": {
-                "Id": "1",
-                "Name": "Phone",
-                "ImageUrl": "/category/Phones.png"
+                "Id": "8",
+                "Name": "Watch",
+                "ImageUrl": "/category/Watch.png"
             },
-            "Price": 1437,
+            "Price": "$857",
             "ImageUrl": "/ProductsImages/Samsung Galaxy Watch.png",
             "Tag": {
                 "Id": "3",
                 "Name": "Featured Products"
             },
+            "discount": true,
             "banner": {
                 "Id": "3",
                 "Name": "Samsung Galaxy",
-                "ImageUrl": "BannersImages/bannersImage3.png"
-            },
-            "discount": true
+                "ImageUrl": "BannersImages/bannersImage3.png",
+                "Description": "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use."
+            }
         },
         {
             "Id": "11",
@@ -240,13 +258,16 @@
                 "Name": "Smart Watch",
                 "ImageUrl": "/category/SmartWatches.png"
             },
-            "Price": 1437,
+            "Price": "$980",
             "ImageUrl": "/ProductsImages/Apple Watch.png",
             "Tag": {
                 "Id": "3",
                 "Name": "Featured Products"
             },
-            "discount": false
+            "discount": false,
+            "banner":{
+                "Id":"null"
+            }
         },
         {
             "Id": "12",
@@ -256,13 +277,16 @@
                 "Name": "Phone",
                 "ImageUrl": "/category/Phones.png"
             },
-            "Price": 1437,
+            "Price": "1437",
             "ImageUrl": "/ProductsImages/Oppo Reno 5 Lite.png",
             "Tag": {
                 "Id": "3",
                 "Name": "Featured Products"
             },
-            "discount": false
+            "discount": false,
+            "banner":{
+                "Id":"null"
+            }
         }
     ],
     "Tags": [
@@ -275,10 +299,6 @@
             "Name": "Bestseller"
         },
         {
-            "Id": "3",
-            "Name": "Featured Products"
-        },
-         {
             "Id": "3",
             "Name": "Featured Products"
         }

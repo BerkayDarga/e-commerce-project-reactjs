@@ -18,6 +18,8 @@ import ProductsPage from './Home-Page-Components/ProductsPage.jsx'
 
 import ProductDetail from '../src/Product-Detail-Page/ProductDetail.jsx'
 
+import BannerProducts from "./Home-Page-Components/BannerProducts.jsx"
+
 import Home2 from '../src/Home-Page-Components/Home2.jsx'
 
 function App() {
@@ -31,8 +33,8 @@ function App() {
 
           <Route path='/' element={<Home2 />} />
           <Route path='/ProductsPage/:id' element={<ProductsPage />} />
-          <Route path='/ProductDetail' element={<ProductDetail />} />
-          {/* <Route path='/https://www.facebook.com/?locale=tr_TR' element={<facebookPage/>} /> */}
+          <Route path='/BannerProducts/:idsi' element={<BannerProducts />} />
+          <Route path='/ProductDetail/:idDetail' element={<ProductDetail />} />
 
         </Routes>
 
@@ -46,7 +48,7 @@ function App() {
 
     </>
   )
-  
+
 }
 
 export default App

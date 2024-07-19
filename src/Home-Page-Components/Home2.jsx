@@ -112,7 +112,7 @@ const Home2 = () => {
             .catch(error => console.log(error))
     }, []);
 
-    // 110 de parametreli yaptığımız fonksiyon bu 3 fonksiyon yerine kullandık
+    // 101 de parametreli yaptığımız HandleClick fonksiyonunu= bu 3 fonksiyon yerine kullandık
 
     // function HandleClick() { // ilk çalıştığında değil basıldıgında calısacagı için useEffect kullanmamıza gerek yok
     //     fetch("http://localhost:3000/Product?Tag.Id=1")
@@ -140,6 +140,13 @@ const Home2 = () => {
     const productsField = (id) => {
         navigate(`/ProductsPage/${id}`)
     };
+
+    const bannerField = (tt) => {
+        navigate(`/BannerProducts/${tt}`)
+    }
+    const detailPage = (detailId) => {
+        navigate(`/ProductDetail/${detailId}`)
+    }
 
     return (
         <div className="">
@@ -178,7 +185,7 @@ const Home2 = () => {
                 </div>
                 <div className="productsgrid">
                     {tagsProducts.map(tag => (
-                        <Products key={tag.Id} like={like} photo={tag.ImageUrl} description={tag.Name} money={tag.Price} />
+                        <Products key={tag.Id} like={like} photo={tag.ImageUrl} description={tag.Name} money={tag.Price} buttonclick={() => detailPage(tag.Id)}/>
 
                     ))}
                     {/* <Products like={like} photo={productphone} description="Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)" money="$900" />
@@ -193,7 +200,7 @@ const Home2 = () => {
             </div>
             <div className="bannercontainer">
                 {banner.map(bnr => (
-                    <Banners key={bnr.Id} photo={bnr.ImageUrl} title={bnr.Name} bannerdescription={bnr.Description} bannersButton={shopbuttonclick} />
+                    <Banners key={bnr.Id} photo={bnr.ImageUrl} title={bnr.Name} bannerdescription={bnr.Description} bannersButton={() => bannerField(bnr.Id)} />  //tt=bnr.ıd
                 ))}
                 {/* <Banners photo={banners3} title="Ipad Pro" bannerdescription="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use." bannersButton={shopbuttonclick} />
                 <Banners photo={banners2} title="Samsung Galaxy" bannerdescription="iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use." bannersButton={shopbuttonclick} />

@@ -14,7 +14,6 @@ const Banners = (BannersProps) => {
                     <p>{bannerdescription}</p>
                     <button onClick={bannersButton} className="transparentButton2">Shop Now</button>
                 </div>
-
             </div>
         </div>
     );

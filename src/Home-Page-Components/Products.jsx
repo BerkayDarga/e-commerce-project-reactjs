@@ -5,11 +5,9 @@ const Products = (ProductCardProps) => {
     const photo = ProductCardProps.photo;
     const description = ProductCardProps.description;
     const money = ProductCardProps.money;
+    const buttonclick = ProductCardProps.buttonclick;
 
     const navigation = useNavigate();
-    const buttonclick = () => {
-        navigation('/ProductsPage');
-    } 
     return (
         <div className="productcard">
             <div className="topsection">

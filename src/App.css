@@ -168,12 +168,18 @@
 }
 
 .categoryprops {
+  background-color: transparent;
+  border: none;
   width: 160px;
   height: 128px;
   border-radius: 15px;
   background-color: #EDEDED;
   text-align: center;
   padding-top: 24px;
+}
+
+.categoryprops:focus {
+  outline: none;
 }
 
 .categories {
@@ -292,7 +298,7 @@
   height: 656px;
   position: relative;
   padding: 80px 160px;
-  
+
 }
 
 .discountproducts h3 {
@@ -407,7 +413,7 @@
   line-height: 2;
 }
 
-.section2{
+.section2 {
   line-height: 2;
 }
 
@@ -422,4 +428,19 @@
 .categoryprops img {
   width: 48px;
   height: 48px;
+}
+
+.productDetail {
+  width: 500px;
+  height: 500px;
+}
+
+.productDetail p {
+  width: 100px;
+  height: 100px;
+}
+
+.productDetail img {
+  width: 100px;
+  height: 100px;
 }
