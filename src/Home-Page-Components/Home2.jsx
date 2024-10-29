@@ -48,10 +48,9 @@ import image18 from '../assets/Home-Page-Assests/Banner2Images/image18.png'
 import tabletApple from '../assets/Home-Page-Assests/Banner2Images/tabletApple.png'
 import { useEffect, useState } from 'react'
 
-
 const Home2 = () => {
 
-    const [categories, setCategories] = useState([])
+    const [ categories, setCategories] = useState([])
     const [discounts, setDiscounts] = useState([])
     const [banner, setBanners] = useState([])
     const [tagsProducts, setTagsProducts] = useState([])

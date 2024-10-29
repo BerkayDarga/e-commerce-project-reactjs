@@ -17,8 +17,8 @@ const ProductsPage = () => {
             .catch(error => console.log(error))
     }, []);
 
-    const navigation = useNavigate();
 
+    const navigation = useNavigate();
 
 
     const detailPage = (detailId) => {

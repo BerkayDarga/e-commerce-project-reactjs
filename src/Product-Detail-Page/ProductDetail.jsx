@@ -25,10 +25,7 @@ const ProductDetail = () => {
                 <p>"ürünün fiyatı:"{detail.Price}</p>
             </div>
 
-        ))
-
-
-    )
+        )));
 
 }
 

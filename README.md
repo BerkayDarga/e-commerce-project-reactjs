@@ -1,11 +1,9 @@
-# React + Vite
+Projeyi ayağa kaldırmak için json server çalıştırılır.
+cd src
+npx json-server --watch db.json
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
+Projeyi ayağa kaldırmak web çalıştırılır.
+npm run dev
 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-![Vector](https://github.com/BerkayDarga/e-commerce-project-reactjs/assets/158577908/d4b36e0e-29c2-46f2-9783-acf4ce1cca77)
+
