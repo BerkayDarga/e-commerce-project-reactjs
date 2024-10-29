@@ -5,4 +5,7 @@ npx json-server --watch db.json <br>
 Projeyi ayağa kaldırmak web çalıştırılır. <br>
 npm run dev
 
-https://github.com/user-attachments/assets/32409851-394b-4537-a595-25f0da77421f
+
+
+https://github.com/user-attachments/assets/812bd99d-dcb5-4fd4-b2a1-314ff2c181bd
+
