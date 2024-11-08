@@ -444,3 +444,11 @@
   width: 100px;
   height: 100px;
 }
+.allProduct {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center;     /* Dikeyde ortalar */
+    min-height: 100vh;       /* Sayfa boyutuna göre tam ekran ortalama */
+    flex-direction: column;  /* Eğer birden fazla öğe varsa dikeyde düzenler */
+    padding: 20px;
+}

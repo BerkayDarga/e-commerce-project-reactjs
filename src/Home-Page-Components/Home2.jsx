@@ -50,7 +50,7 @@ import { useEffect, useState } from 'react'
 
 const Home2 = () => {
 
-    const [ categories, setCategories] = useState([])
+    const [categories, setCategories] = useState([])
     const [discounts, setDiscounts] = useState([])
     const [banner, setBanners] = useState([])
     const [tagsProducts, setTagsProducts] = useState([])
@@ -134,9 +134,10 @@ const Home2 = () => {
 
     const navigate = useNavigate();
     const shopbuttonclick = () => {
-        navigate('/ProductsPage');
+        navigate(`/AllProducts`);
     }
-    const productsField = (id) => {
+    const productsField = (id) => {   //bu id aşağıdaki category komponentinin ordaki (category.Id) ye eşit
+        // (category komponentinden buraya burdan home2 ye bağlantılıyoruz id yi)
         navigate(`/ProductsPage/${id}`)
     };
 
@@ -149,7 +150,9 @@ const Home2 = () => {
 
     return (
         <div className="">
-            <Banner Iphone={phone} buttonclick={shopbuttonclick} />
+            <div>
+                <Banner Iphone={phone} buttonclick={shopbuttonclick} />
+            </div>
 
             <SmallBanners earPhone={EarPhone} playstationArm={img36} macBook={computer} playStation={playstation} buttonclick={shopbuttonclick} />
 
@@ -184,7 +187,7 @@ const Home2 = () => {
                 </div>
                 <div className="productsgrid">
                     {tagsProducts.map(tag => (
-                        <Products key={tag.Id} like={like} photo={tag.ImageUrl} description={tag.Name} money={tag.Price} buttonclick={() => detailPage(tag.Id)}/>
+                        <Products key={tag.Id} like={like} photo={tag.ImageUrl} description={tag.Name} money={tag.Price} buttonclick={() => detailPage(tag.Id)} />
 
                     ))}
                     {/* <Products like={like} photo={productphone} description="Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)" money="$900" />

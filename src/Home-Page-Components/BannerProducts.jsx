@@ -5,7 +5,8 @@ import like from '../assets/Home-Page-Assests/ProductsImages/Like.png'
 
 const BannerProducts = () => {
 
-    const { idsi } = useParams();  //buradaki yol adı (idsi) app teki path variable ile aynı olmalı
+    const { idsi } = useParams();  //buradaki yol adı (idsi) app teki path variable ile aynı olmalı. oradaki idsi
+    // ni buraya useParams ile alıyoruz. aşağıdaki Product?banner.Id ile eşliyoruz
     const [categories, setCategories] = useState([])
 
 

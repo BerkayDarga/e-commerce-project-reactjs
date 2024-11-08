@@ -22,6 +22,8 @@ import BannerProducts from "./Home-Page-Components/BannerProducts.jsx"
 
 import Home2 from '../src/Home-Page-Components/Home2.jsx'
 
+import AllProducts from '../src/Home-Page-Components/AllProducts.jsx'
+
 function App() {
 
   return (
@@ -33,6 +35,7 @@ function App() {
 
           <Route path='/' element={<Home2 />} />
           <Route path='/ProductsPage/:id' element={<ProductsPage />} />
+          <Route path='/AllProducts' element={<AllProducts />} />
           <Route path='/BannerProducts/:idsi' element={<BannerProducts />} />
           <Route path='/ProductDetail/:idDetail' element={<ProductDetail />} />
 
@@ -40,7 +43,6 @@ function App() {
 
         <Footer logoCyber={cyberLogo} logoTwitter={twitterLogo} logoFacebook={facebookLogo} logoTiktok={tiktokLogo} logoInstagram={ınstagramLogo} />
       </Router>
-
 
     </>
   )

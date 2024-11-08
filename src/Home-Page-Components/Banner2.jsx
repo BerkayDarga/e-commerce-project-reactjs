@@ -16,7 +16,7 @@ const Banner2 = (Banner2Props) => {
             <div className="banner2description">
                 <h2>Big Summer Sale</h2>
                 <p className="commonColor">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
-                <button className="transparentButton">Shop Now</button>
+                <button onClick={butonClick} className="transparentButton">Shop Now</button>
             </div>
         </div>
     )
