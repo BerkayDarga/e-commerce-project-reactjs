@@ -19,10 +19,15 @@ const ProductDetail = () => {
 
         productsDetail.map(detail => (
             <div className="productDetail">
-                <p>"ürün adı:"{detail.Name}</p>
-                <img src={detail.ImageUrl} />
-                <p>"kategori adı: "{detail.Category.Name}</p>
-                <p>"ürünün fiyatı:"{detail.Price}</p>
+                <div className="productDetailLeft">
+                    <img src={detail.ImageUrl} />
+                </div>
+                <div className="productDetailRight">
+                    <h1>{detail.Name}</h1>
+                    <h3>{detail.Price}</h3>
+                    <button>Sepete Ekle</button>
+                </div>
+
             </div>
 
         )));

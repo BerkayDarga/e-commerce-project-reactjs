@@ -188,7 +188,6 @@ const Home2 = () => {
                 <div className="productsgrid">
                     {tagsProducts.map(tag => (
                         <Products key={tag.Id} like={like} photo={tag.ImageUrl} description={tag.Name} money={tag.Price} buttonclick={() => detailPage(tag.Id)} />
-
                     ))}
                     {/* <Products like={like} photo={productphone} description="Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)" money="$900" />
                     <Products like={like} photo={photocamera} description="Blackmagic Pocket Cinema Camera 6k" money="$2535" />
